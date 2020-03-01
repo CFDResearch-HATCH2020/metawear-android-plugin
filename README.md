@@ -20,12 +20,8 @@ The metawear plugin jar file is used to allow us to communicate with the metawea
 
 
 
+## Tips
 
-
-
-
-
-Tips
 If you wish to access additional functions of the metawear sensor, you can learn about the different systems provided and see some example projects at the following links: 
 General advice for setup and code chunks you can mostly copy-paste:  
 
