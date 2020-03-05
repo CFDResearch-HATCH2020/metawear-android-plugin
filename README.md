@@ -14,6 +14,8 @@ The metawear plugin jar file is used to allow us to communicate with the metawea
 
 5. Under "SDK Tools", select "NDK (Side by side)" and "Google USB Driver" and install these additional tools.
 
+![](doc/android_sdkmanager_screenshot.png)
+
 ## Build instructions for MetaWear Plugin
 
 1. Open the Metawear Plugin Project in Android Studio.   
