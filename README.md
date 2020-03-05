@@ -10,7 +10,7 @@ The metawear plugin jar file is used to allow us to communicate with the metawea
 
 3. After installation completes, open Android Studio.
 
-4. Navigate to Tools >> SDK Manager.
+4. Navigate to Tools->SDK Manager.
 
 5. Under "SDK Tools", select "NDK (Side by side)" and "Google USB Driver" and install these additional tools.
 
@@ -55,12 +55,17 @@ https://github.com/mbientlab/MetaWear-SDK-Android
        - Any function added here will be automatically performed during the initial connection.
        - If you want a function that can be called only when a specific value is requested, it will have to be its own function and will have to call back to the C# functions as discussed below.
 
+![](doc/metawear_java_initialize_screenshot.png)
+
 - To call back to the C# functions, you simply need to add a function to your C# code that can catch the incoming data and call it with the UnityPlayer.UnitySendMessage function.
    - The data being sent must be a string which can be parsed on the C# script.
    - The data must communicate to a specific object as shown below where “BlueCharacter” refers to the object unity associates with the script, “changePitchValue” refers to a function of the C# script, and pitchStr is the string equivalent of the new pitch value coming in.
 
+![](doc/metawear_java_unitysendmessage_screenshot.png)
  
 - Once the java code has been compiled, the C# code from the unity project calls it from the code shown below and initializes the connection to the sensor assigned to the team by the address.
    - Once connected, the sensor will begin automatically sending the pitch, yaw, and roll values.
    - If requested by the C# code, the java code will also notify the app of the device’s battery level.
       - The code to do this is commented out in the update function and can be added in anywhere with javaClass.Call("getBattery");
+
+![](doc/unity_csharp_screenshot.png)
