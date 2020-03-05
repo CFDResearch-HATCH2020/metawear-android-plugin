@@ -30,7 +30,7 @@ The metawear plugin jar file is used to allow us to communicate with the metawea
 
 6. After making sure it is linked correctly, you are free to make any edits to the MetaWearWrapper.java class.
 
-7. To recompile, you simply select build (circled in purple) and click “Make Module ‘metawearandroidplugin’”. This should automatically rebuild the .jar file used to interact with the metawear SDK and the script circled in green should automatically copy it to the unity project directory.
+7. To recompile, you simply select build (circled in purple) and click “Make Module ‘metawearandroidplugin’” (Note: This option will only be available if MetaWearWrapper.java or the plugins build.gradle is the active file). This should automatically rebuild the .jar file used to interact with the metawear SDK and the script circled in green should automatically copy it to the unity project directory.
 
 *NOTE:* You may need to change the “from” directory in the MetwearPlugin build.gradle file (line 60), depending on where in the “intermediates” directory the classes.jar file is generated.
 
